@@ -1,0 +1,6 @@
+transaction_id,customer_id,amount,balance,transaction_type,transaction_frequency,document_text,target
+TXN001,C001,10000,50000,credit,2,Transaction approved by manager,0
+TXN002,C002,20000,60000,debit,5,Funds transferred without authorization,1
+TXN003,C003,15000,55000,credit,3,Transaction processed successfully,0
+TXN004,C004,5000,52000,debit,1,Insufficient balance warning,1
+TXN005,C005,25000,70000,credit,4,Payment received from client,0

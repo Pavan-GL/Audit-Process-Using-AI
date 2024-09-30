@@ -1,0 +1,20 @@
+2024-09-26 10:01:58,646 - INFO - Data loaded successfully.
+2024-09-26 10:01:58,646 - INFO - Starting data preprocessing.
+2024-09-26 10:01:58,647 - INFO - Missing values filled.
+2024-09-26 10:01:58,649 - INFO - Numerical features scaled.
+2024-09-26 10:01:58,651 - INFO - Text features extracted using TF-IDF.
+2024-09-26 10:01:58,653 - INFO - Data split into training and testing sets.
+2024-09-26 10:01:58,656 - INFO - Processed data saved to D:\Audit Process\data\processed_data.pkl.
+2024-09-26 10:23:48,217 - INFO - Data loaded successfully.
+2024-09-26 10:23:48,233 - INFO - Starting data preprocessing.
+2024-09-26 10:23:48,233 - INFO - Missing values filled.
+2024-09-26 10:23:48,291 - INFO - Numerical features scaled.
+2024-09-26 10:23:48,329 - INFO - Text features extracted using TF-IDF.
+2024-09-26 10:23:48,332 - ERROR - Error during preprocessing: The test_size = 1 should be greater or equal to the number of classes = 2
+2024-09-26 10:24:15,572 - INFO - Data loaded successfully.
+2024-09-26 10:24:15,572 - INFO - Starting data preprocessing.
+2024-09-26 10:24:15,573 - INFO - Missing values filled.
+2024-09-26 10:24:15,577 - INFO - Numerical features scaled.
+2024-09-26 10:24:15,579 - INFO - Text features extracted using TF-IDF.
+2024-09-26 10:24:15,618 - INFO - Data split into training and testing sets.
+2024-09-26 10:24:15,619 - INFO - Processed data saved to D:\Audit Process\data\processed_data.pkl.

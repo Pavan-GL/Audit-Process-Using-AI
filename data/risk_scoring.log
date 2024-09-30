@@ -1,0 +1,27 @@
+2024-09-26 10:09:54,404 - ERROR - Error during model training: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.
+2024-09-26 10:10:34,499 - ERROR - Error during model training: could not convert string to float: 'TXN005'
+2024-09-26 10:11:58,505 - ERROR - Error during model training: name 'ColumnTransformer' is not defined
+2024-09-26 10:12:25,892 - ERROR - Error during model training: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.
+2024-09-26 10:12:41,379 - ERROR - Error during model training: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.
+2024-09-26 10:13:34,777 - ERROR - Error during model training: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.
+2024-09-26 10:13:39,369 - ERROR - Error during model training: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.
+2024-09-26 10:15:08,009 - INFO - Logistic Regression model trained successfully.
+2024-09-26 10:15:08,009 - ERROR - Error during prediction: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.
+2024-09-26 10:16:08,673 - INFO - Logistic Regression model trained successfully.
+2024-09-26 10:16:08,673 - ERROR - Error during prediction: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.
+2024-09-26 10:17:28,501 - INFO - Logistic Regression model trained successfully.
+2024-09-26 10:17:28,515 - ERROR - Error during prediction: Found unknown categories ['TXN002'] in column 0 during transform
+2024-09-26 10:18:39,943 - INFO - Logistic Regression model trained successfully.
+2024-09-26 10:18:40,023 - INFO - Risk scores predicted successfully.
+2024-09-26 10:18:40,024 - ERROR - Error during evaluation: Only one class present in y_true. ROC AUC score is not defined in that case.
+2024-09-26 10:20:39,027 - INFO - Logistic Regression model trained successfully.
+2024-09-26 10:20:39,031 - INFO - Risk scores predicted successfully.
+2024-09-26 10:20:39,101 - ERROR - Error during evaluation: Only one class present in y_true. ROC AUC score is not defined in that case.
+2024-09-26 10:22:35,330 - INFO - Logistic Regression model trained successfully.
+2024-09-26 10:22:35,364 - INFO - Risk scores predicted successfully.
+2024-09-26 10:22:35,471 - INFO - Risk scores categorized successfully.
+2024-09-26 10:22:35,516 - INFO - Model saved to D:\Audit Process\data\logistic_regression_model.pkl.
+2024-09-26 10:24:21,619 - INFO - Logistic Regression model trained successfully.
+2024-09-26 10:24:21,623 - INFO - Risk scores predicted successfully.
+2024-09-26 10:24:21,627 - INFO - Risk scores categorized successfully.
+2024-09-26 10:24:21,630 - INFO - Model saved to D:\Audit Process\data\logistic_regression_model.pkl.

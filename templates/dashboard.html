@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Compliance Dashboard</title>
+    <style>
+        /* Add some basic styling */
+        body { font-family: Arial, sans-serif; }
+        #anomalies { margin-top: 20px; }
+        .tooltip { display: inline; position: relative; }
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Adjust to position tooltip above */
+            left: 50%;
+            margin-left: -60px; /* Center the tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Audit Compliance Dashboard</h1>
+    
+    <h2>Ask a Compliance-Related Question</h2>
+    <form method="POST" action="/">
+        <input type="text" name="question" placeholder="Enter your question here..." required>
+        <button type="submit">Submit</button>
+    </form>
+    
+    {% if answer %}
+    <h3>Compliance Answer:</h3>
+    <p>{{ answer }}</p>
+    {% endif %}
+    
+    <h2>Real-Time Anomalies</h2>
+    <div id="anomalies">
+        <p>Loading anomalies...</p>
+    </div>
+    <p><strong>Note:</strong> High-risk transactions are identified based on various criteria such as transaction amount, frequency, and patterns of behavior that deviate from normal practices.</p>
+    
+    <script>
+        fetch('/anomalies')
+            .then(response => response.json())
+            .then(data => {
+                const anomaliesDiv = document.getElementById('anomalies');
+                const transactions = data.high_risk_transactions.map(txn => `
+                    <div class="tooltip">${txn}
+                        <span class="tooltiptext">Details about ${txn}...</span>
+                    </div>
+                `).join(', ');
+                anomaliesDiv.innerHTML = `
+                    <p>Anomaly Count: ${data.anomaly_count}</p>
+                    <p>High Risk Transactions: ${transactions}</p>
+                `;
+            })
+            .catch(error => {
+                console.error('Error fetching anomalies:', error);
+            });
+    </script>
+</body>
+</html>

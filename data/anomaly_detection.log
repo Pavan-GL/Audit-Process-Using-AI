@@ -1,0 +1,10 @@
+2024-09-26 10:05:07,675 - ERROR - Error during model training: Feature names are only supported if all input features have string names, but your input has ['int', 'str'] as feature name / column name types. If you want feature names to be stored and validated, you must convert them all to strings, by using X.columns = X.columns.astype(str) for example. Otherwise you can remove feature / column names from your input data, or convert them all to a non-string data type.
+2024-09-26 10:05:48,896 - ERROR - Error during model training: could not convert string to float: 'TXN005'
+2024-09-26 10:06:27,384 - INFO - Isolation Forest model trained successfully.
+2024-09-26 10:06:27,388 - INFO - Anomaly predictions made successfully.
+2024-09-26 10:06:28,053 - INFO - Model evaluation completed.
+2024-09-26 10:06:28,107 - INFO - Model saved to D:\Audit Process\data\isolation_forest_model.pkl.
+2024-09-26 10:08:12,571 - INFO - Isolation Forest model trained successfully.
+2024-09-26 10:08:12,575 - INFO - Anomaly predictions made successfully.
+2024-09-26 10:08:12,581 - INFO - Model evaluation completed.
+2024-09-26 10:08:12,586 - INFO - Model saved to D:\Audit Process\data\isolation_forest_model.pkl.
